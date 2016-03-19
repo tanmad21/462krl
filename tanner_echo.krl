@@ -22,5 +22,8 @@ ruleset echo {
     select when echo message input re#(.*)# setting(m)
     send_directive("say") with
       something = m;
+    always {
+      log "message ran"
+    }
   }
 }
