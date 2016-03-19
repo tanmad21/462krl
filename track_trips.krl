@@ -13,5 +13,8 @@ ruleset track_trips {
     select when echo message mileage "(.*)" setting(m)
     send_directive("trip") with
       trip_length = m;
+    always {
+      log "mileage rule ran"
+    }
   }
 }
