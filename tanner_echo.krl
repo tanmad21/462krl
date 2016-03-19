@@ -6,6 +6,7 @@ ruleset echo {
     >>
     author "Tanner Madsen"
     logging on
+    sharing on
   }
 
   rule hello is active {
